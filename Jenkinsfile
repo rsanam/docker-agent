@@ -55,7 +55,7 @@ pipeline {
                 }
                 stage('Linux') {
                     agent {
-                        label "docker&&linux"
+                        label "master"
                     }
                     options {
                         timeout(time: 30, unit: 'MINUTES')
